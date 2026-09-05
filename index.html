@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website work properly on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Baby 🦇</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================================================
+         BACKGROUND
+    ================================================== -->
+
+    <div class="background">
+
+     
+		
+
+        <!-- Batman-style yellow glow -->
+        <div class="bat-signal"></div>
+
+        <!-- Decorative bats -->
+        <div class="bat bat1">🦇</div>
+        <div class="bat bat2">🦇</div>
+        <div class="bat bat3">🦇</div>
+
+    </div>
+
+
+    <!-- ==================================================
+         MUSIC
+    ================================================== -->
+
+    <audio id="birthdaySong" loop>
+        <source src="audio.mpeg" type="audio/mpeg">
+    </audio>
+
+
+    <!-- ==================================================
+         MAIN WEBSITE
+    ================================================== -->
+
+    <main class="website">
+
+
+        <!-- ==================================================
+             SCREEN 1 — QUESTION
+        ================================================== -->
+
+        <section id="questionScreen" class="screen active">
+
+            <div class="card question-card">
+
+                <div class="bat-logo">🦇</div>
+
+                <h1 class="main-title">
+                    Happy Birthday Baby
+                </h1>
+
+                <div class="yellow-line"></div>
+
+                <h2>
+                    Before your surprise begins...
+                </h2>
+
+                <p class="question-text">
+                    Do I still get to make u....
+                    <strong>SMILE?</strong> 🖤💛
+                </p>
+
+                <div class="question-buttons">
+
+                    <button
+                        id="yesButton"
+                        class="button yes-button">
+                        YES 💛
+                    </button>
+
+                    <!-- This button moves around when approached -->
+                    <button
+                        id="noButton"
+                        class="button no-button">
+                        NO
+                    </button>
+
+                </div>
+
+                <p id="noMessage" class="no-message"></p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             SCREEN 2 — BIRTHDAY MESSAGE
+        ================================================== -->
+
+        <section id="messageScreen" class="screen">
+
+            <div class="card message-card">
+
+                <div class="small-bat">🦇</div>
+
+                <h1 class="main-title">
+                    Happy Birthday, Baby
+                </h1>
+
+                <div class="yellow-line"></div>
+
+
+                <!-- ==========================================
+                     SCROLLABLE PARAGRAPH
+                =========================================== -->
+
+                <div class="letter-box">
+
+                    <p>
+                        September 1, 2026                                11:28
+                        Happy Birthday Suraj (Baby)
+                        I am writing this quite early because I only write well when my emotions
+                        are on peak. Aahhhh I don't know if u will even receive this
+						but if u do I don't know if u will read it but if u do I don't if
+						I will spoil ur day by writing this ofc I don't want that, that's 
+						why I am very hesitant about sending. First of all I love you and 
+						I miss you so send you bunch of I love yous, wo ai nis and sarang har yos..........
+						I don't know what to say like I don't want to bring up many things 
+						so I will just wish u have a great day baby (sorry it's a habit
+						it feels unnatural to call u anything else) and u turning 20?
+						Aaahhhhh so old........soon u will be uncle. It's 11:11 I made a wish.
+						What a timing. I don't know but knowing you go to college now makes
+						me feel something like so proud I know that's a bit stupid but it does.
+						And u so smart then u will be smarter and more smarter and
+						so intelligent makes me wanna kiss u (don't be offended).
+						I feel so happy when I imagine u will be a lawyer and
+						you will have that sticker on your car and on your name plate. 
+						I pray in very young age you achieve a lot with hardwork and
+						be a supreme court lawyer one day. 
+						
+						Work very very hard you can definitely do it the best and don't skip classes okay. 
+						I wish you achieve everything you want in life be it power, money, 
+						peace and happiness. May success follows you forever.
+						I wasn't really thinking of writing I was a bit upset
+						but right now I feel like from heart. I wanted to also send u some gifts
+						though they are very simple cuz uk I am very bad at picking gifts,
+						and wtv I really wanna give is a bit costly for me rn.
+						Also so just if u will like to know I am doing better than before 
+						and have changed alot, I don't act crazy and impulsive anymore 
+						I just run to chatgpt before even opening my mouth like
+						I have achieved control over me it was very hard but ig 
+						I did it therapist wouldn't do shit like I did like the
+						saying goes only you know yourself better. I know it's very late for it 
+						but I can't do anything about it rn. I will let the past be past but
+						definitely won't repeat things. Na na bolte itna likh liya.
+						I was thinking of writing in a book but I hate writing from childhood okay.
+						I don't if I am writing a birthday wish or diary. Just be healthy and 
+						take care of yourself go to gym. I love you so much.
+                        Don't grow old too fast. A very happy birthday baby. Enjoy ur day.
+                    </p>
+
+                    <p class="special-line">
+                        Today is all about you. 🖤💛
+                    </p>
+
+                    <p>
+                        Well for me everyday is all about u......
+						Happy birthday, my baby.
+                        May this year be kinder to you,
+                        bigger for you and filled with moments
+                        worth remembering forever.
+                    </p>
+
+                    <p class="signature">
+                        With all my love,
+                        <br>
+                        ❤️
+                    </p>
+
+                </div>
+
+
+                <!-- ==========================================
+                     CUTE GIF
+                =========================================== -->
+
+                <div class="gif-container">
+
+                    <!-- Replace cute.gif with your own GIF -->
+                    <img
+                        src="Batman and Catwoman.jfif"
+                        class="cute-gif"
+                        alt="Cute birthday GIF">
+					</img>
+
+                </div>
+
+
+                <button
+                    id="photoNextButton"
+                    class="next-button">
+                    NEXT 💛
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             SCREEN 3 — PHOTO
+        ================================================== -->
+
+        <section id="photoScreen" class="screen">
+
+            <div class="card photo-card">
+
+                <div class="small-bat">🦇</div>
+
+                <h1 class="main-title">
+                    One More Thing...
+                </h1>
+
+                <div class="yellow-line"></div>
+
+                <p class="photo-intro">
+                    A little memory for my birthday boy. 💛
+                </p>
+
+
+                <!-- PHOTO SLOWLY APPEARS -->
+
+                <div class="photo-wrapper">
+
+                    <!-- Replace baby.jpeg -->
+                    <img
+                        src="baby.jpeg"
+                        class="birthday-photo"
+                        alt="Birthday memory"></img>
+
+                </div>
+
+
+                <p class="photo-caption">
+                    My favourite person. 🖤
+                </p>
+
+
+                <button
+                    id="flowerNextButton"
+                    class="next-button">
+                    NEXT 🌻
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             SCREEN 4 — FLOWER GAME
+        ================================================== -->
+
+        <section id="flowerScreen" class="screen">
+
+            <div class="card flower-card">
+
+                <div class="small-bat">🦇</div>
+
+                <h1 class="main-title">
+                    A Bouquet For You
+                </h1>
+
+                <div class="yellow-line"></div>
+
+                <p>
+                    Every flower is a little piece of love.
+                </p>
+
+                <p class="drag-instruction">
+                    Drag the flowers one by one into the bouquet. 🌸
+                </p>
+
+
+                <!-- ==========================================
+                     FLOWERS
+                =========================================== -->
+
+                <div class="flower-area">
+
+                    <div
+                        class="flower"
+                        draggable="true"
+                        data-flower="🌹">
+                        🌹
+                    </div>
+
+                    <div
+                        class="flower"
+                        draggable="true"
+                        data-flower="🌻">
+                        🌻
+                    </div>
+
+                    <div
+                        class="flower"
+                        draggable="true"
+                        data-flower="🌷">
+                        🌷
+                    </div>
+
+                    <div
+                        class="flower"
+                        draggable="true"
+                        data-flower="🌸">
+                        🌸
+                    </div>
+
+                    <div
+                        class="flower"
+                        draggable="true"
+                        data-flower="🌼">
+                        🌼
+                    </div>
+
+                    <div
+                        class="flower"
+                        draggable="true"
+                        data-flower="🌺">
+                        🌺
+                    </div>
+
+                    <div
+                        class="flower"
+                        draggable="true"
+                        data-flower="💐">
+                        💐
+                    </div>
+
+                </div>
+
+
+                <!-- ==========================================
+                     BOUQUET
+                =========================================== -->
+
+                <div
+                    id="bouquet"
+                    class="bouquet">
+
+                    <div class="bouquet-label">
+                        DROP YOUR FLOWERS HERE
+                    </div>
+
+                    <div
+                        id="bouquetFlowers"
+                        class="bouquet-flowers">
+                    </div>
+
+                </div>
+
+
+                <p
+                    id="bouquetMessage"
+                    class="bouquet-message">
+                </p>
+
+
+                <div
+                    id="finalMessage"
+                    class="final-message">
+
+                    🦇
+
+                    <h2>
+                        Happy Birthday, Baby
+                    </h2>
+
+                    <p>
+                        You deserve the whole bouquet. 💛
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
