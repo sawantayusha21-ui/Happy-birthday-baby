@@ -101,27 +101,29 @@ function showScreen(screenToShow) {
 /* =========================================================
    YES BUTTON
 ========================================================= */
-
 yesButton.addEventListener("click", function() {
 
-    /*
-       Start music when YES is clicked.
-    */
-
+    // Start music
     startMusic();
 
+    // Send notification to my email
+    emailjs.send("service_v7envk4", "template_q3dl09a", {
+        name: "Birthday Website",
+        email: "",
+        title: "He clicked YES!",
+        message: "Someone just clicked YES on the birthday website! 💛"
+    }).then(function() {
+        console.log("Notification sent!");
+    }).catch(function(error) {
+        console.log("Notification failed:", error);
+    });
 
-    /*
-       Small delay makes the transition feel smoother.
-    */
-
+    // Change button text
     yesButton.innerText = "I KNEW IT 💛";
 
-
+    // Move to birthday message
     setTimeout(function() {
-
         showScreen(messageScreen);
-
     }, 600);
 
 });
